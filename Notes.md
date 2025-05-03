@@ -98,6 +98,8 @@ The push refers to repository [docker.io/obstmi/udacitysecurity])
 * test: docker pull obstmi/udacitysecurity:hardened-v1.0
 * docker trust inspect --pretty obstmi/udacitysecurity:hardened-v1.0
 
+## Install k3s
+* curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v1.32.2+k3s1 K3S_KUBECONFIG_MODE="644" sh -
 
 
 
