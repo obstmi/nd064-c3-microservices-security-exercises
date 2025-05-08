@@ -1,4 +1,5 @@
-# Installations
+# Installations  
+(The corresponding Vagrant machine is in Training/Udacity/nd064-c3-microservices-security-exercises/lesson-3-docker-attack-surface-analysis-and-hardening/exercises/starter/Vagrantfile)
 ## Go
 ### Remove old versions:  
 * sudo apt-get remove golang-go
@@ -34,6 +35,7 @@ python3 -m icdiff <file1> <file2>
 ## Install Syft
 * sudo curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo sh -s -- -b /usr/local/bin
 * syft --version
+* E.g.: syft opensuse/leap:latest --scope all-layers
 
 ## Install Grype
 * curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo sh -s -- -b /usr/local/bin
