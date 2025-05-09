@@ -15,7 +15,9 @@
 * go env | grep GOENV
 
 ## Install docker-compose standalone
-* sudo curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-aarch64 -o /usr/local/bin/docker-compose
+* ARM: sudo curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-aarch64 -o /usr/local/bin/docker-compose
+* x86: sudo curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+
 * sudo chmod +x /usr/local/bin/docker-compose
 
 ## Install pip
@@ -102,6 +104,12 @@ The push refers to repository [docker.io/obstmi/udacitysecurity])
 
 ## Install k3s
 * curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v1.32.2+k3s1 K3S_KUBECONFIG_MODE="644" sh -
+
+## Install Python
+### openSUSE 15.4
+* sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:python:Factory/15.4/devel:languages:python:Factory.repo
+zypper refresh
+zypper install python
 
 
 
